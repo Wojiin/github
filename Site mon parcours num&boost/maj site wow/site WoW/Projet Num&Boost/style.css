@@ -1,0 +1,182 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(#012516, #000000);
+  color: #fff;
+}
+
+a {
+  color: #99ccff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px #000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header h1 {
+  color: #66ff99;
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: url("https://bnetcmsus-a.akamaihd.net/cms/blog_header/ze/ZE5YC83V7D121622067139361.jpg?")
+    no-repeat center center/cover;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  color: #66ff66;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+/* Sections */
+.section {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+
+.section h3 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.classe__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.decriclasse {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.titreclasse h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.titreclasse.guerrier h4 {
+  color: #d32f2f;
+}
+.titreclasse.paladin h4 {
+  color: #f48cba;
+}
+.titreclasse.chaman h4 {
+  color: #0288d1;
+}
+.titreclasse.chasseur h4 {
+  color: #388e3c;
+}
+.titreclasse.demoniste h4 {
+  color: #8e24aa;
+}
+.titreclasse.druide h4 {
+  color: #f57c00;
+}
+.titreclasse.mage h4 {
+  color: #1976d2;
+}
+.titreclasse.pretre h4 {
+  color: #ffffff;
+}
+.titreclasse.voleur h4 {
+  color: #fbc02d;
+}
+
+.card:hover {
+  background-color: #333;
+}
+
+.dark {
+  background-color: #111;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #111;
+  font-size: 0.9rem;
+}
