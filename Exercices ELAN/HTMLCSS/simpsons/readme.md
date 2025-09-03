@@ -1,10 +1,12 @@
 # 📚 Exercice ELAN Formation — *"Simpsons 1"*
 
 ## 📝 À propos  
-Ce projet est un **exercice de mise en pratique en HTML et CSS**, visant à reproduire une page web statique dédiée à la célèbre série animée **Les Simpsons**. 
+Ce projet est un **exercice de mise en pratique en HTML et CSS**, visant à reproduire une page web statique dédiée à la célèbre série animée **Les Simpsons**. L’objectif est de consolider les bases du développement web tout en respectant les bonnes pratiques de structuration et de mise en page. 
+
+
+
 ![modèle simpsons1](https://github.com/user-attachments/assets/33218c1c-d59a-4b77-a707-dd66e5cca406)
 
-L’objectif est de consolider les bases du développement web tout en respectant les bonnes pratiques de structuration et de mise en page.  
 
   
 
