@@ -1,0 +1,102 @@
+/*Import de la font Poppins via googlefont*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*Reset global des marges, Prise en compte des bordures dans la taille des éléments, 
+ définition de la font par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+/* Englobe la page, positionne les éléments au centre de celle-ci,
+ horizontalement et verticalement en les espaçant de 20px */
+#container {
+  display: flex;
+  min-height: 100vh;
+  background: rgba(68, 117, 136, 0.548);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* défini le modèle de la carte, cache les éléments qui débordent,
+ utilise un fond blanc, possède 300px de large, des bords arrondis à 10px,
+  un effet d'ombre, et une transition d'une seconde pour les animations*/
+.card {
+  overflow: hidden;
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  transition: 1s;
+}
+/* L'élément carte monte de 15px au survol de celui ci par le curseur*/
+.card:hover {
+  transform: translateY(-15px);
+}
+/*Lélément contenant l'image et le coeur. Hauteur de 200px, position relative
+(permet de manipuler les enfants en position absolute), cache les éléments débordant*/
+.card-header {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+/*comportement de l'image dans le card-header, occupe tout l'espace en hauteur et largeur,
+conserve ses dimensions de base sans dépasser du card-header, dispose d'un filtre
+gris à 100%, d'une transition de 0.5sec pour les animations, des bords arrondis
+en haut à gauche et à droite */
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.5s;
+  border-radius: 10px 10px 0 0;
+}
+
+/* au survol de la carte par le curseur, le filtre gris de l'image passe à 0%
+et elle zoom de 10% (principe d'échelle)*/
+.card:hover .card-header img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+/*élément sous l'image, contenant le texte, qui dispose d'une marge intérieure de 30px*/
+.card-text {
+  padding: 30px;
+}
+/* défini le comportement du titre contenu dans card-text,
+avec une taille de 25px, une marge extérieure de 10px, une épaisseur de 700*/
+.card-text h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+/* défini le comportement du paragraphe contenu dans card-text,
+avec une taille de 14px, une couleur grise, une épaisseur de 300*/
+.card-text p {
+  font-size: 14px;
+  color: rgb(147, 147, 147);
+  font-weight: 300;
+}
+/*élément contenant l'icône de coeur*/
+.coeur {
+  display: flex; /*permet de replacer l'icone en utilisant justify-content et align-item*/
+  justify-content: center; /* centre sur l'axe horizontal*/
+  align-items: center; /* centre sur l'axe vertical*/
+  width: 50px; /*largeur 50px*/
+  height: 50px; /*hauteur 50px*/
+  background: rgb(237, 53, 96); /*couleur de fond*/
+  color: white; /* couleur de l'icone ( se comporte comme du texte */
+  font-size: 20px; /*taille de l'icone*/
+  position: absolute; /*permet de positionner l'élément en dehors de son parent*/
+  top: 0; /*positionné à la hauteur de son parent*/
+  left: -50px; /*positionné 50pixel à gauche de son parent*/
+  transition: 1s; /*l'animation se fera en 1 seconde*/
+}
+/* au survol de la carte, l'élément coeur se déplacera dans son parent, sur la position
+la plus à gauche*/
+.card:hover .coeur {
+  left: 0;
+}
