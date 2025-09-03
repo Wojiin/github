@@ -13,8 +13,8 @@ Les notions abordées :
 ## 🎯 Objectifs pédagogiques  
 
 ### Partie **CSS**  
-- Comprendre et appliquer les concepts de **Flexbox**  
-- Exploiter les **pseudo-classes** pour enrichir l’interactivité  
+- Comprendre et appliquer les concepts de **Flexbox**, notamment en utilisant la propriété position 
+- Exploiter les **pseudo-classes** pour enrichir l’interactivité, notamment hover  
 - Savoir **importer et personnaliser** des polices et icônes externes  
 - Structurer le code avec des **commentaires clairs**  
 
