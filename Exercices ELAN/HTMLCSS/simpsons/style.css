@@ -1,18 +1,21 @@
+/* Règles générales, reset global des marges, définition de la taille des éléments à leurs bordures, font globale " Poppins "*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
 }
+/* La couleur de l'arrière plan le plus au fond possible est " gold" */
 body {
   background-color: gold;
 }
+/* la largeur de la div qui contient tous les éléments est de 80%, sa couleur d'arrière plan est " white ", son emplacement est centré*/
 #wrapper {
   width: 80%;
   margin: auto;
   background-color: white;
 }
-
+/* le titre de rang 2 a sa police d'une taille de 35px, il centré, de couleur " white ", dispose d'une marge intérieure globale de 0.5em, son arrière plan est de couleur " dodgerblue "*/
 header h2 {
   font-size: 35px;
   background-color: dodgerblue;
@@ -20,75 +23,81 @@ header h2 {
   color: white;
   padding: 0.5em;
 }
-
+/* l'élément qui contient l'image dans header a une largeur de 100% et une hauteur de 300px. */
 header figure {
   width: 100%;
   height: 300px;
-  object-fit: cover;
 }
+/* l'image s'adapte à son conteneur tout en gardant sa taille et son ratio en terme de dimension, quitte à rogner ce qui en déborde*/
 figure img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+/* les éléments contenus s'alignent de gauche à droite mais sont espacés au maximum entre eux, il y a une marge de 3% sur le côté haut de l'élément*/
 main {
   display: flex;
   margin-top: 3%;
   justify-content: space-between;
 }
 nav {
-  height: fit-content;
-  width: 15%;
-  background-color: dodgerblue;
-  text-align: center;
-  margin-left: 1%;
-  padding: 0.5em 1% 0.5em 0;
+  height: fit-content; /* la hauteur est définie par son contenu*/
+  width: 15%; /* sa largeur est de 15% de la taille de son conteneur*/
+  background-color: dodgerblue; /*son arrière plan est de couleur " dodgerblue"*/
+  text-align: center; /*le texte est centré sur la ligne*/
+  margin-left: 1%; /* l'élément a une marge extérieure de 1%*/
+  padding: 0.5em 1% 0.5em 0; /*l'élément a une marge intérieure de 0.5em en haut, 1% à droite, 0.5em en bas*/
 }
+/* la liste n'a pas de puce et la taille de la police d'écriture est de 20px*/
 nav li {
   list-style: none;
   font-size: 20px;
 }
+/*les liens sont de couleur blanche dans " nav "*/
 nav a {
   color: white;
 }
+/*l'article possède une largeur de 80% du main, il dispose d'une marge extérieure de 1%*/
 article {
   width: 80%;
-  font-size: 15px;
   margin: 1%;
 }
+/* le titre de rang 1 contenu dans article a une couleur " gold ", la taille de sa police est de 40px, sa marge extérieure en bas est de 2%*/
 article h1 {
   color: gold;
   font-size: 40px;
   margin-bottom: 2%;
 }
+/* la police d'écriture du paragraphe est de 25px*/
 article p {
   font-size: 25px;
 }
+
 aside {
-  width: 15%;
-  padding: 1%;
-  margin-bottom: 3%;
-  background-color: dodgerblue;
-  margin-right: 1%;
-  color: white;
-  font-weight: 800;
+  width: 15%; /*la largeur de l'élément est de 15% de son conteneur*/
+  padding: 1%; /*sa marge intérieure est de 1%*/
+  margin-bottom: 3%; /* sa marge extérieure en bas est de 3%*/
+  background-color: dodgerblue; /*son arrière plan est de couleur dodgerblue*/
+  margin-right: 1%; /*sa marge extérieure est de 1% à droite*/
+  color: white; /*la couleur du texte est " white "*/
+  font-weight: 800; /* l'épaisseur du texte est de 800*/
 }
 aside h3 {
-  font-size: 25px;
-  margin-bottom: 0.5em;
+  font-size: 25px; /* la police du titre de rang 3 a une taille de 25px*/
+  margin-bottom: 0.5em; /* sa marge extérieure en bas est de 0.5em*/
 }
 aside figure img {
-  border: 3px solid white;
+  border: 3px solid white; /* le conteneur de l'image d'aside a une bordure de 3px, elle est entière et blanche*/
 }
 aside p {
-  text-align: justify;
+  text-align: justify; /* le texte du paragraphe d'aside va jusqu'au bord de la marge à chaque ligne tant que c'est possible*/
 }
 footer {
-  background-color: darkblue;
-  color: white;
-  text-align: center;
-  padding: 1em;
+  background-color: darkblue; /*l'arrière plan du footer est de couleur " darkblue "*/
+  color: white; /* la couleur du texte du footer est " white " */
+  text-align: center; /* le texte est centré sur la ligne*/
+  padding: 1em; /*l'élément a une marge intérieure de 1em*/
 }
 small {
-  font-size: 20px;
+  font-size: 20px; /* la police d'écriture du texte contenu dans small est de 20px*/
 }
